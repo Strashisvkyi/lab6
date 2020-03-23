@@ -14,7 +14,7 @@ public class CreditSearcher {
 		if (matchingValue.find()) {
 			do {
 				System.out.println("Found value: " + matchingValue.group(0));
-				credits=credits + matchingValue.group(0).trim()+" ";
+				credits = credits + matchingValue.group(0).trim() + " ";
 			} while (matchingValue.find());
 		} else {
 			System.out.println("No matches");
